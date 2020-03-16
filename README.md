@@ -37,3 +37,5 @@ root@axcf2152:~# balena-engine run -it -p 1880:1880 --network=host --privileged 
 ```
 This command will install and create your container which will run with the balena-engine from boot by default, and if your unit is connected to the internet so should be Node-Red, allowing to install any contribution you desire from the interface 
 
+# important : this build will not run without an SD card addtional memory, due to Node-Red storage requeriments  
+
