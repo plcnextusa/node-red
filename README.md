@@ -1,7 +1,7 @@
-# node-red
+### node-red ###
 
 
-##Part 1 - Installation of Balena Engine##
+## Part 1 - Installation of Balena Engine ##
 This is part of a series of articles that demonstrate how to install Balena-engine on PLCnext controller and work with OCI containers.
 In this article, we will install the Balena-engine and start OCI containers.
 
