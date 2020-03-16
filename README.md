@@ -15,7 +15,7 @@ In this article, we will install the Balena-engine and start OCI containers.
 
 ### Download the Project to the controller ###
 
-[ root@axcf2152:/opt/plcnext/# git clone https://github.com/PLCnext/Docker_GettingStarted.git ]
+ root@axcf2152:/opt/plcnext/# git clone https://github.com/PLCnext/Docker_GettingStarted.git 
 
 root@axcf2152:/opt/plcnext/# cd Docker_GettingStarted
 ### Install Balena ###
@@ -31,7 +31,6 @@ root@axcf2152:~# ./setup.sh
 ### Install node-red from the official node-red container hub( https://hub.docker.com/r/nodered/node-red ) ###
 
 root@axcf2152:~# balena-engine run -it -p 1880:1880 --network=host --privileged --name=mynodered nodered/node-red
-
 
 This command will install and create your container which will run with the balena-engine from boot by default, and if your unit is connected to the internet so should be Node-Red, allowing to install any contribution you desire from the interface. 
 
