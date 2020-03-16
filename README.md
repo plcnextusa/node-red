@@ -15,15 +15,15 @@ In this article, we will install the Balena-engine and start OCI containers.
 
 ### Download the Project to the controller ###
 
-root@axcf2152:/opt/plcnext/# git clone https://github.com/PLCnext/Docker_GettingStarted.git 
+root@axcf2152:~# /opt/plcnext/# git clone https://github.com/PLCnext/Docker_GettingStarted.git 
 
-root@axcf2152:/opt/plcnext/# cd Docker_GettingStarted
+root@axcf2152:~# /opt/plcnext/# cd Docker_GettingStarted
 
 ### Install Balena ###
 
 To install balena-engine run the setup.sh
 
-root@axcf2152:~# chmod +x setup.sh
+root@axcf2152:~# chmod -c 777 setup.sh
 root@axcf2152:~# ./setup.sh
 
 
