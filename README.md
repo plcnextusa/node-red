@@ -13,7 +13,7 @@ In this article, we will install the Balena-engine and start OCI containers.
 3.	Change to root via "su -" (root password have to be setup LINK)
 4.	Make sure your Internet connection is intact, via command-line ping 8.8.8.8.
 
-#Download the Project to the controller
+#Download the Project to the controller#
 
 root@axcf2152:/opt/plcnext/# git clone https://github.com/PLCnext/Docker_GettingStarted.git
 
