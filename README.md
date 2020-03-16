@@ -35,5 +35,5 @@ root@axcf2152:~# ./setup.sh
 ```bash
 root@axcf2152:~# balena-engine run -it -p 1880:1880 --network=host --privileged --name=mynodered nodered/node-red
 ```
-This command will install and create your container which will run with the balena-engine from boot by default, and if your unit is connected to the internet so should be Node-Red, allowing to install any contribution you desire from the interface. 
+This command will install and create your container which will run with the balena-engine from boot by default, and if your unit is connected to the internet so should be Node-Red, allowing to install any contribution you desire from the interface 
 
