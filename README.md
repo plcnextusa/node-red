@@ -57,9 +57,8 @@ root@axcf2152:~# cat <<EOT >> /opt/startup.sh
                  EOT
 ```
 ```bash
-root@axcf2152:~# mkdir /var/spool/cron/crontabs
-root@axcf2152:~# touch /var/spool/cron/crontabs/root
-root@axcf2152:~# echo "@reboot sleep 20s && /opt/startup.sh" > root
+root@axcf2152:~# touch /var/spool/cron/root
+root@axcf2152:~# echo "@reboot sleep 20s && ./opt/startup.sh" > /var/spool/cron/root
 ```
 
 Enjoy it!
