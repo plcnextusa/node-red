@@ -42,5 +42,6 @@ Now you can start and stop your Node_red container anytimeby using the folowing 
 root@axcf2152:~# balena-engine start mynodered
 root@axcf2152:~# balena-engine stop mynodered
 ```
+## Part 3 - Optional - Auto Start Node-Red at device boot up
 
-
+this set of commands will craete the necessary scheduling task with the "crontabs" function.
