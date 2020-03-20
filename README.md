@@ -48,7 +48,7 @@ root@axcf2152:~# balena-engine stop mynodered
 this set of commands will create the necessary scheduling task with the "crontabs" function.
 
 ```bash
-root@axcf2152:~#  cat <<EOT >> /var/spool/cron/startup
+root@axcf2152:~# cat <<EOT >> /var/spool/cron/startup
 
 @reboot sleep 20s && /usr/bin/balena-engine start mynodered >> /opt/plcnext/logs/PLCstartup.logs
 
@@ -57,8 +57,6 @@ EOT
 
 ```bash
 root@axcf2152:~# crontab /var/spool/cron/startup
-```
-
 ```
 
 Enjoy it!
