@@ -1,5 +1,5 @@
 # node-red 
-
+## important : this build will not run without an SD card addtional memory, due to Node-Red storage requeriments -Minimum 2GB Memory stick for AXC F 2152 (Part# 1043501 or 1061701)
 
 ## Part 1 - Installation of Balena Engine   https://github.com/PLCnext/Docker_GettingStarted 
 This is part of a series of articles that demonstrate how to install Balena-engine on PLCnext controller and work with OCI containers.
@@ -37,5 +37,10 @@ root@axcf2152:~# balena-engine run -it -p 1880:1880 --network=host --privileged 
 ```
 This command will install and create your container which will run with the balena-engine from boot by default, and if your unit is connected to the internet so should be Node-Red, allowing to install any contribution you desire from the interface 
 
-# important : this build will not run without an SD card addtional memory, due to Node-Red storage requeriments -Minimum 2GB Memory stick for AXC F 2152 (Part# 1043501 or 1061701)
+Now you can start and stop your Node_red container anytimeby using the folowing commands.
+```bash
+root@axcf2152:~# balena-engine start mynodered
+root@axcf2152:~# balena-engine stop mynodered
+```
+
 
