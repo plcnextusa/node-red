@@ -44,4 +44,4 @@ root@axcf2152:~# balena-engine stop mynodered
 ```
 ## Part 3 - Optional - Auto Start Node-Red at device boot up
 
-this set of commands will craete the necessary scheduling task with the "crontabs" function.
+this set of commands will create the necessary scheduling task with the "crontabs" function.
