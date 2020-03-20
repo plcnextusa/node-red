@@ -9,9 +9,10 @@ In this article, we will install the Balena-engine and start OCI containers.
 
 ### Establish the Connections 
 1.	Connect the AXC F 2152 controller to Internet-Provider and Linux OS via LAN-cable.
-2.	Start the terminal on Linux OS and establisch the SSH-Connection to PLC via commandline "ssh admin@192.168.1.10".
+2.	Start the terminal on Linux OS and establish the SSH-Connection to PLC via command line "ssh admin@192.168.1.10".
 3.	Change to root via "su -" (root password have to be setup LINK)
 4.	Make sure your Internet connection is intact, via command-line ping 8.8.8.8
+
 
 ### Download the Project to the controller 
 
@@ -35,9 +36,9 @@ root@axcf2152:~# ./setup.sh
 ```bash
 root@axcf2152:~# balena-engine run -it -p 1880:1880 --network=host --privileged --name=mynodered nodered/node-red
 ```
-This command will install and create your container which will run with the balena-engine from boot by default, and if your unit is connected to the internet so should be Node-Red, allowing to install any contribution you desire from the interface 
+This command will install and create your container which will run with the balena-engine from boot by default, and if your unit is connected to the internet so should be Node-Red, allowing to install any contribution you desire from the interface
 
-Now you can start and stop your Node_red container anytimeby using the folowing commands.
+Now you can start and stop your Node_red container anytime by using the following commands.
 ```bash
 root@axcf2152:~# balena-engine start mynodered
 root@axcf2152:~# balena-engine stop mynodered
