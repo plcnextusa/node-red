@@ -51,7 +51,7 @@ this set of commands will create the necessary scheduling task with the "crontab
 ```bash
 root@axcf2152:~# cat <<EOT >> /var/spool/cron/startup
 
-@reboot sleep 20s && /usr/bin/balena-engine start mynodered >> /opt/plcnext/logs/PLCstartup.logs
+@reboot sleep 20s && /etc/init.d/balena start && /usr/bin/balena-engine start mynodered >> /opt/plcnext/logs/PLCstartup.logs
 
 EOT
 ```
