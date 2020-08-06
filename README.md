@@ -27,6 +27,7 @@ To install balena-engine run the setup.sh
 ```bash
 root@axcf2152:~# chmod -c 777 setup.sh
 root@axcf2152:~# ./setup.sh
+root@axcf2152:~# /etc/init.d/balena start
 ```
 
 ## Part 2 - Installation of node-red container 
