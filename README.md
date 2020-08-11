@@ -35,29 +35,19 @@ root@axcf2152:~# /etc/init.d/balena start
 ### Install node-red from the official node-red container hub https://hub.docker.com/r/nodered/node-red 
 
 ```bash
-root@axcf2152:~# balena-engine run -it -p 1880:1880 --network=host --privileged --name=mynodered nodered/node-red
+root@axcf2152:~# balena-engine run -it --restart unless-stopped -p 1880:1880 --network=host --privileged --name=mynodered nodered/node-red
+```
+```bash
+root@axcf2152:~# update-rc.d -f firewall remove
+root@axcf2152:~# reboot
 ```
 This command will install and create your container which will run with the balena-engine from boot by default, and if your unit is connected to the internet so should be Node-Red, allowing to install any contribution you desire from the interface
 
-Now you can start and stop your Node_red container anytime by using the following commands.
+Also you can start and stop your Node_red container anytime by using the following commands.
 ```bash
 root@axcf2152:~# balena-engine start mynodered
 root@axcf2152:~# balena-engine stop mynodered
 ```
-## Part 3 - Optional - Auto Start Node-Red at device boot-up
 
-this set of commands will create the necessary scheduling task with the "crontabs" function.
-
-```bash
-root@axcf2152:~# cat <<EOT >> /var/spool/cron/startup
-
-@reboot sleep 20s && /etc/init.d/balena start && /usr/bin/balena-engine start mynodered >> /opt/plcnext/logs/PLCstartup.logs
-
-EOT
-```
-
-```bash
-root@axcf2152:~# crontab /var/spool/cron/startup
-```
 
 Enjoy it!
