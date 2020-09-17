@@ -10,7 +10,7 @@ In this article, we will install the Balena-engine and start OCI containers.
 ### Establish the Connections 
 1.	Connect the AXC F 2152 controller to Internet-Provider and Linux OS via LAN-cable.
 2.	Start the terminal on Linux OS and establish the SSH-Connection to PLC via command line "ssh admin@192.168.1.10".
-3.	Change to root via "su -" (root password have to be setup LINK)
+3.	Change to root via "su -" (root password have to be setup https://github.com/plcnextusa/PLCnext-Guides/blob/master/Appendices/Appendix%204%20How%20to%20create%20a%20root%20user%20in%20SSH.pdf)
 4.	Make sure your Internet connection is intact, via command-line ping 8.8.8.8
 
 
