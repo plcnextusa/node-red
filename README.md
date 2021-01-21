@@ -21,7 +21,7 @@ root@axcf2152:~# git clone https://github.com/PLCnext/Docker_GettingStarted.git
 
 root@axcf2152:~# cd Docker_GettingStarted
 ```
-### Install Balena 
+### Install Docker
 
 To install balena-engine run the setup.sh
 ```bash
