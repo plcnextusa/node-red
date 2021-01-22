@@ -1,6 +1,6 @@
 
 
-# node-red 
+# node-red ![](images/nodererlogo.png)
 ## important: this build will not run without an SD card addtional memory, due to Node-Red storage requirements -Minimum 2GB Memory stick for AXC F series (Part# 1043501 or 1061701)
 
 ### **1 Node-Red installation**
