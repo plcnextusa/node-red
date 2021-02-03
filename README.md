@@ -49,7 +49,7 @@ the Setup script will run and prompt you as below, you must select **Docker** an
 After installing Docker you can pull the official node-red container by running the command below. 
 
 ```bash
-root@axcf2152:~# balena-engine run -it --restart unless-stopped -p 1880:1880 --network=host --privileged --name=mynodered nodered/node-red
+root@axcf2152:~# docker-engine run -it --restart unless-stopped -p 1880:1880 --network=host --privileged --name=mynodered nodered/node-red
 ```
 
 This command will install and create your container which will run with Docker from boot by default, and if your unit is connected to the internet so should be Node-Red, allowingyou to install any contribution you desire from the interface
